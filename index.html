@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geane Alves | Psicanalista</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-content">
+            <div class="logo-text">Geane Alves</div>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#conteudo">Conteúdo</a>
+                <a href="#artigos">Artigos</a>
+                <a href="#portfolio">Portfólio</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) com WhatsApp -->
+    <section class="hero">
+        <div class="container">
+            <h1>Escuta, Acolhimento e Transformação</h1>
+            <p>Um espaço seguro para elaborar suas questões através da psicanálise.</p>
+            <a href="https://wa.me/5531971467763" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Agendar Sessão
+            </a>
+        </div>
+    </section>
+
+    <!-- Textos Informativos -->
+    <section id="sobre" class="section">
+        <div class="container text-center">
+            <h2>A Clínica Psicanalítica</h2>
+            <p>A psicanálise é um convite para olhar para si mesmo. Neste espaço, trabalhamos com a fala para organizar o que dói em silêncio, identificando padrões inconscientes e construindo novos caminhos.</p>
+        </div>
+    </section>
+
+    <!-- Imagens estilo Instagram e Vídeos -->
+    <section id="conteudo" class="section bg-light">
+        <div class="container">
+            <h2>Reflexões Diárias</h2>
+            
+            <div class="grid-3">
+                <!-- Card Estilo Instagram -->
+                <div class="card">
+                    <div class="img-placeholder">Imagem 1</div>
+                    <div class="card-body">
+                        <p>O que o seu sintoma está tentando te dizer? A psicanálise nos ajuda a decifrar essa linguagem.</p>
+                    </div>
+                </div>
+
+                <!-- Card de Vídeo -->
+                <div class="card">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i> Vídeo
+                    </div>
+                    <div class="card-body">
+                        <p>Breve reflexão sobre a ansiedade na vida moderna.</p>
+                    </div>
+                </div>
+
+                <!-- Card Estilo Instagram -->
+                <div class="card">
+                    <div class="img-placeholder">Imagem 2</div>
+                    <div class="card-body">
+                        <p>A importância de estabelecer limites saudáveis nas relações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="Artigos" class="section bg-light">
+        <div class="container">
+            <h2> Artigos e Portfólio</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Trabalhos de pesquisa (Portifólio)</h3>
+                    <P>Estruturações de mapas mentais e estudos de caso psicanalíticos em ambiente acadêmico e clínico.</P>
+                    <a href="#" class="linl-ler">Ver Portfólio &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+        <div class="container">
+            <p>&copy; 2026 Geane Alves - Psicanalista | CBO 2515-50. Todos os direitos reservados</p>
+        </div>
+     </footer>
+
+     <!-- Banner LGPD-->
+    <div id="lgpd-banner" class="lgpd-banner">
+        <p>Este site utiliza cookies essenciais para garantir a melhor experiência de navegação de navegação e realizar análises de tráfego, respeitando a Lei Geral de Proteção de Dados (LGPD). Ao continuar, você concorda com a nossa <a href="#">Política de Privacidade</a>.</p>
+        <button onclick="aceitarCookies()" class="btn-aceitar">Entendi e Aceito</button>
+    </div>
+
+    <script>
+        // Lógica simples para o banner LGPD
+        if (!localStorage.getItem('cookiesAceitos')) {
+            document.getElementById('lgpd-banner').style.display = 'flex';
+        }
+        function aceitarCookies() {
+            localStorage.setItem('cookiesAceitos', 'true');
+            document.getElementById('lgpd-banner').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
