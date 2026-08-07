@@ -88,3 +88,92 @@ nav a {
     font-weight: bold;
     transition: 0.3s;
 }
+
+.btn-whatsapp:hover { background-color: #128C7E; }
+
+/* Seções Gerais */
+.section { padding: 80px 0; }
+.section h2 { font-size: 32px, margin-bottom: 40px text-align: center; }
+
+/* Grids Responsivas*/
+.grid-3, .grid-2 {
+    display: grid;
+    gap: 30px;
+}
+
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+
+/* Cards (Estilo Insta/Vídeo/Artigos) */
+.card {
+    background: var(--branco);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.img-placeholder, .video-placeholder {
+   background-color: var(--azul-claro);
+    color: var(--branco);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px 
+}
+
+.video-placeholder { background-color: var(--azul-escuro); }
+
+.card-body { padding: 20px; }
+.link-ler { color: var(--azul-escuro); text-decoration:  none, font-weight: bold; }
+
+/* Depoimentos */
+.testimonial {
+    font-style: italic;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--azul-claro);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* Banner LGPD */
+.lgpd-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--branco);
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.01);
+    padding: 20px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lgpd-banner a {color: var(--azul-escuro); font-weight: bold; }
+
+.btn-aceitar {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Responsividade básica (Media Queries) */
+@media (max-widht: 768px) {
+    .header-content { flex-direction: column; gap: 15px; }
+    .lgpd-banner { flex-direction: column, gap: 15px; text-align: center; }
+    .hero h1 { font-size: : 30px; }
+}
