@@ -185,3 +185,17 @@ footer {
     .lgpd-banner { flex-direction: column, gap: 15px; text-align: center; }
     .hero h1 { font-size: : 30px; }
 }
+
+/* Tamanho da logo no menu superior */
+.logo-header {
+    height: 50px; /*Mantém o cabeçalho fino e elegante */
+    width: auto;
+    vertical-align: middle;
+}
+
+/* Tamanho da logo no rodapé */
+.logo-footer {
+    height: 80px; /* Um pouco maior para assinar a página */
+    width: auto;
+    margin-bottom: 15px;
+}
