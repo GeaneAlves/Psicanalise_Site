@@ -112,6 +112,14 @@ nav a {
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
+/* Estilo para imagens reais dentro dos cards */
+.img-card {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    display: block;
+}
+
 .img-placeholder, .video-placeholder {
    background-color: var(--azul-claro);
     color: var(--branco);
