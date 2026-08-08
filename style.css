@@ -187,11 +187,11 @@ footer {
 }
 
 /* Tamanho da logo no menu superior */
-.logo-header {
-    height: 50px; /*Mantém o cabeçalho fino e elegante */
-    width: auto;
-    vertical-align: middle;
-}
+/* .logo-header { */
+    /* height: 50px; /*Mantém o cabeçalho fino e elegante */
+    /* width: auto; */
+    /* vertical-align: middle; */
+/* } */
 
 /* Tamanho da logo no rodapé */
 .logo-footer {
