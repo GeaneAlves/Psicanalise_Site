@@ -1,29 +1,41 @@
-/* Vaiáveis de cores */
+/* Variáveis de Cores (Estilo Aconchegante e Elegante) */
 :root {
-    --azul-escuro: #1A2942;
-    --azul-claro: #4A5D7E;
-    --fundoclaro: #F8F9FA;
-    --branco: #FFFFFF;
-    --texto: #000000;
+    --azul-escuro: #122238; /* Índigo profundo para contraste e elegância */
+    --azul-claro: #A3BCC6;  /* Azul suave para detalhes e respiros */
+    --fundo-creme: #F9F7F2; /* Bege/Off-white super claro para dar o ar aconchegante */
+    --branco-puro: #FFFFFF; /* Para caixas de destaque */
+    --texto-cinza: #5A5A5A; /* Para textos longos ficarem suaves na leitura */
 }
 
-/* Reset básico */
-{
+/* Reset Básico */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    background-color: var(--fundo-creme); /* Aplica o fundo aconchegante no site todo */
     font-family: 'Lato', sans-serif;
-    color: var(--texto);
+    color: var(--texto-cinza);
     line-height: 1.6;
 }
 
-h1, h2, h3,{
-    font-family: 'Playfair Display' serif;
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
     color: var(--azul-escuro);
-    
+}
+
+body {
+    background-color: var(--fundo-creme); /* Aplica o fundo aconchegante no site todo */
+    font-family: 'Lato', sans-serif;
+    color: var(--texto-cinza);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--azul-escuro);
 }
 .container {
     width: 90%;
@@ -35,14 +47,35 @@ h1, h2, h3,{
 .text.center { text-align: center; }
 .bg-light { background-color: var(--fundoclaro); }
 
-/* Cabeçalho*/
+/* Cabeçalho */
 header {
-    background-color: var(--branco);
-    padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: var(--fundo-creme); /* Fundo igual ao da sua referência */
+    padding: 25px 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid #EBE7DD; /* Uma linha bem sutil para separar */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo do Menu */
+.menu-principal a {
+    text-decoration: none;
+    color: var(--texto-cinza);
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.5px; /* Espaçamento elegante entre as letras */
+    transition: color 0.3s;
+}
+
+.menu-principal a:hover {
+    color: var(--azul-claro);
 }
 
 /* Subtítulo abaixo da logo no cabeçalho */
