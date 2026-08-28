@@ -306,3 +306,97 @@ details[open] summary::after {
     border: none;
     display: block;
 }
+
+/* ------------------------------------------- */
+/* NOVOS ESTILOS: OUSADIA, GEOMETRIA E LEITURA */
+/* ------------------------------------------- */
+
+/* Consertando o Botão do WhatsApp (Forçando o Azul) */
+.btn-whatsapp {
+    background-color: var(--azul-claro) !important;
+    color: var(--azul-escuro) !important;
+    border: 2px solid var(--azul-claro);
+}
+.btn-whatsapp:hover {
+    background-color: transparent !important;
+    color: var(--branco-puro) !important;
+}
+
+/* Grids e Geometria para as Fotos */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.texto-conteudo p {
+    margin-bottom: 15px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+/* O "Truque" da Geometria nas Fotos */
+.foto-geometrica {
+    position: relative;
+    z-index: 2;
+}
+
+.img-destaque {
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 10px 30px rgba(18, 34, 56, 0.15);
+}
+
+.forma-fundo {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--azul-claro);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.forma-fundo.fundo-escuro {
+    background-color: var(--azul-escuro);
+    right: auto;
+    left: -20px;
+}
+
+/* Inverter a ordem no celular */
+@media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; gap: 40px; }
+    .grid-2.invertido .foto-geometrica { grid-row: 1; }
+    .forma-fundo { top: 10px; right: -10px; }
+    .forma-fundo.fundo-escuro { left: -10px; }
+}
+
+/* Consertando a parede de texto nos Cards (Scrollbar Interno) */
+.texto-oculto {
+    margin-top: 15px;
+    font-size: 15px;
+    color: var(--texto-cinza);
+    line-height: 1.8;
+    text-align: left;
+    
+    /* Aqui está a mágica para textos longos */
+    max-height: 250px; 
+    overflow-y: auto; 
+    padding-right: 15px;
+}
+
+/* Customizando a barra de rolagem para ficar chique */
+.texto-oculto::-webkit-scrollbar {
+    width: 6px;
+}
+.texto-oculto::-webkit-scrollbar-thumb {
+    background-color: var(--azul-claro);
+    border-radius: 10px;
+}
+.texto-oculto::-webkit-scrollbar-track {
+    background-color: var(--fundo-creme);
+}
