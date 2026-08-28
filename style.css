@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, .logo-text {
+h1, h2, h3,{
     font-family: 'Playfair Display' serif;
     color: var(--azul-escuro);
     
@@ -45,19 +45,28 @@ header {
     z-index: 100;
 }
 
+/* Subtítulo abaixo da logo no cabeçalho */
+.subtitulo-header {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    color: var(--azul-claro);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo-text { font-size: 24px; font-weight: bold; }
-
-nav a {
-    text-decoration: none;
+.logo-text { 
+    font-family: 'Playwrite AR', cursive; /* Aqui está a nova fonte! */
+    font-size: 22px; 
+    font-weight: 400;
     color: var(--azul-escuro);
-    margin-left: 20px;
-    font-weight: 700;
+    line-height: 1.2;
 }
 
 /* Hero Section*/
