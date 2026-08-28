@@ -322,7 +322,7 @@ details[open] summary::after {
     color: var(--branco-puro) !important;
 }
 
-/* Grids e Geometria para as Fotos */
+/* Forçando a grade dividir a tela em dois (Texto de um lado, foto do outro) */
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -342,12 +342,16 @@ details[open] summary::after {
     z-index: 2;
 }
 
+/* Travando o tamanho máximo da imagem para não estourar a tela */
 .img-destaque {
     width: 100%;
+    max-width: 450px; /* Impede a foto de ficar gigante */
     border-radius: 4px;
     position: relative;
     z-index: 3;
     box-shadow: 0 10px 30px rgba(18, 34, 56, 0.15);
+    display: block;
+    margin: 0 auto; /* Centraliza a foto no espaço dela */
 }
 
 .forma-fundo {
